@@ -12,13 +12,12 @@
 }
 
 .banner-wrapper {
-    width: 270px;
+    width: 275px;
     margin: 0 auto;
 }
 
 img {
     width: 100%;
-    height: auto;
 }
 
 header,
@@ -56,36 +55,41 @@ header {
 .title-wrapper {
     display: inline-flex;
     height: 100px;
+    width: 115px;
     margin-left: 13px;
-    border: 1px solid red;
 }
 
 .header-text {
-    width: 95px;
+    /* width: 60%; */
+    margin-top: -5px;
+    line-height: .8;
+    /* padding-right: 3px; */
 }
 
 .chevrons {
-    width: 25px;
-    border: 1px solid #000;
+    width: 123px;
+    margin-top: 5px;
 }
 
 
 /* header bottom */
 
 .btn-legal {
-    width: 60px;
-    height: 30px;
     background: none;
     border: none;
     text-transform: uppercase;
     position: absolute;
     bottom: 5px;
+    left: 10px;
+    padding: 0px 0px;
+    letter-spacing: 1px;
 }
 
 header p {
     position: absolute;
-    bottom: 5px;
-    right: 5px;
+    margin-right: 10px;
+    bottom: 0px;
+    right: 0;
 }
 
 
@@ -102,7 +106,6 @@ header p {
 
 .slide-1 {
     position: absolute;
-    /* margin-right: -1570px; */
     right: -15px;
     ;
 }
@@ -114,25 +117,38 @@ footer {
     height: 40px;
 }
 
+.footer-container {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: auto;
+    padding: 10px 0 8px 0;
+}
+
 footer button {
     background-color: #002080;
     border: none;
+    /* width: 114px; */
+    /* height: 20px; */
+    /* margin-bottom: 2px; */
+    padding: 3px 15px 3px 10px;
 }
 
 .logo {
-    margin-left: 130px;
-    border: 1px solid #000;
+    height: 14px;
+    width: 115px;
 }
 
 
-/* typography */
+/* typography --------------------------------------------------------- */
 
 h1 {
     text-transform: uppercase;
     margin: 0;
     font-size: 14px;
     color: #fff;
-    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .title-small {
@@ -146,7 +162,7 @@ h1 {
 }
 
 .title-large {
-    font-size: 20px;
+    font-size: 26px;
     color: #192c5e;
 }
 
@@ -162,17 +178,21 @@ h2 span {
     display: flex;
 }
 
-p {
-    font-size: 8px;
-}
-
 footer button {
-    font-size: 8px;
+    font-size: 11px;
     color: #fff;
 }
 
 .btn-legal,
 header p {
-    font-size: 8px;
     color: #fff;
+}
+
+.btn-legal {
+    font-size: 10px;
+}
+
+header P {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
 }
