@@ -62,8 +62,12 @@ header {
 .header-text {
     /* width: 60%; */
     margin-top: -5px;
-    line-height: .8;
+    line-height: .84;
     /* padding-right: 3px; */
+}
+
+.title-gold {
+    margin-right: 5px;
 }
 
 .chevrons {
@@ -72,7 +76,7 @@ header {
 }
 
 
-/* header bottom */
+/* header bottom  ---------------- */
 
 .btn-legal {
     background: none;
@@ -93,12 +97,15 @@ header p {
 }
 
 
-/* slide */
+/* end of header bottom  --------------- */
+
+
+/* slide  -------------------------- */
 
 .slide {
-    background-color: #002080;
+    background-color: #002c5f;
     width: 150px;
-    height: 90px;
+    /* height: 90px; */
     align-items: center;
     display: flex;
     justify-content: center;
@@ -106,8 +113,7 @@ header p {
 
 .slide-1 {
     position: absolute;
-    right: -15px;
-    ;
+    right: -12px;
 }
 
 
@@ -128,7 +134,7 @@ footer {
 }
 
 footer button {
-    background-color: #002080;
+    background-color: #002c5f;
     border: none;
     /* width: 114px; */
     /* height: 20px; */
@@ -172,21 +178,17 @@ h1 {
 }
 
 h2 span {
-    font-size: 13px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: #fff;
     display: flex;
 }
 
-footer button {
-    font-size: 11px;
-    color: #fff;
-}
-
 .btn-legal,
 header p {
-    color: #fff;
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px 0.5px grey;
 }
 
 .btn-legal {
@@ -196,4 +198,9 @@ header p {
 header P {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8px;
+}
+
+footer button {
+    font-size: 11px;
+    color: #fff;
 }
