@@ -53,16 +53,19 @@ header {
 }
 
 .title-wrapper {
-    display: inline-flex;
-    height: 100px;
+    display: flex;
+    height: 55px;
     width: 115px;
     margin-left: 13px;
+    justify-content: flex-start;
 }
 
 .header-text {
-    /* width: 60%; */
     margin-top: -5px;
     line-height: .84;
+    /* width: 79px; */
+    width: 79px;
+    /* padding-right: 3px; */
     /* padding-right: 3px; */
 }
 
@@ -71,8 +74,13 @@ header {
 }
 
 .chevrons {
-    width: 123px;
+    /* display: flex; */
+    overflow: auto;
+    /* height: 100px; */
     margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: -10px; */
 }
 
 
