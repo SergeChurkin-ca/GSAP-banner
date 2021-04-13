@@ -45,7 +45,7 @@
         justify-content: space-between;
     }
     /* =========================================
-   2.0 Legal popup    
+        2.0 Legal popup    
     ========================================= */
     
     .legal-popup {
@@ -68,8 +68,8 @@
         cursor: pointer;
     }
     /* =========================================
-   3.0 Header     
-========================================= */
+        3.0 Header     
+    ========================================= */
     
     header {
         height: 210px;
@@ -105,8 +105,8 @@
         align-items: center;
     }
     /* =========================================
-   3.2 Header bottom     
-========================================= */
+        3.2 Header bottom     
+    ========================================= */
     
     .btn-legal {
         background: none;
@@ -176,6 +176,7 @@
         position: absolute;
         right: 0;
     }
+    /* horizontal divider */
     
     .slide-2 h2:after,
     .slide-3 h2:after,
@@ -238,6 +239,7 @@
         line-height: .95;
         margin-top: 3px;
     }
+    /* vertical devider */
     
     .slide-5 .box-left:after {
         content: "";
@@ -245,7 +247,7 @@
         height: 30px;
         width: .7px;
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 70px;
     }
     
@@ -263,7 +265,9 @@
     }
     
     .slide-5 .box-bottom {
-        margin: 0 3px;
+        margin: -4px 6px;
+        line-height: 1.1;
+        text-align: center;
     }
     /* =========================================
         5.0 Footer     
@@ -408,9 +412,6 @@
     .slide-5 h4 {
         font-size: 8px;
         font-weight: 400;
-        text-align: center;
-        margin-top: -4px;
-        line-height: 1.1;
         /* word-spacing: 1px; */
     }
     
