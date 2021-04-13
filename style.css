@@ -234,7 +234,7 @@
     .slide-5 .box-container {
         display: inline-flex;
         flex-wrap: wrap;
-        padding: 0 10px;
+        padding: 0 6px;
         line-height: .95;
         margin-top: 3px;
     }
@@ -262,7 +262,9 @@
         align-items: center;
     }
     
-    .slide .slide-5 .box-bottom {}
+    .slide-5 .box-bottom {
+        margin: 0 3px;
+    }
     /* =========================================
         5.0 Footer     
     ========================================= */
@@ -406,6 +408,10 @@
     .slide-5 h4 {
         font-size: 8px;
         font-weight: 400;
+        text-align: center;
+        margin-top: -4px;
+        line-height: 1.1;
+        /* word-spacing: 1px; */
     }
     
     .slide-5 .span-text {
