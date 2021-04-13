@@ -15,9 +15,9 @@ function popUpOpen() {
     document.querySelector('.legal-popup').style.cssText = "display: block";
     document.querySelector('.banner-wrapper').style.cssText = "display: none"
 }
-
-// chevrons animation
 /*
+// chevrons animation
+
 const tl = gsap.timeline({ repeat: -1 });
 
 

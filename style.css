@@ -1,6 +1,5 @@
-@import url('setup.css');
-
-/*
+    @import url('setup.css');
+    /*
 *   TABLE OF CONTENTS
 *
 *   1.0 Initial layouts 
@@ -11,329 +10,443 @@
 *   5.0 Footer
 *   6.0 Typography
 */
-
-
-/* =========================================
-   1.0 Initial layouts     
-========================================= */
-
-.banner {
-    width: 300px;
-    height: 250px;
-    margin: 1rem auto;
-    border: 1px solid #000;
-}
-
-.banner-wrapper {
-    width: 275px;
-    margin: 0 auto;
-    background: no-repeat center center url('assets/background.png');
-    background-size: cover;
-}
-
-img {
-    width: 100%;
-}
-
-.container,
-h2 span,
-.slide {
-    display: flex;
-}
-
-header,
-footer,
-.slide-section {
-    position: relative;
-    justify-content: space-between;
-}
-
-
-/* =========================================
+    /* =========================================
+        1.0 Initial layouts     
+    ========================================= */
+    
+    .banner {
+        width: 300px;
+        height: 250px;
+        margin: 1rem auto;
+        border: 1px solid #000;
+    }
+    
+    .banner-wrapper {
+        width: 275px;
+        margin: 0 auto;
+        background: no-repeat center center url('assets/background.png');
+        background-size: cover;
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .container,
+    h2 span,
+    .slide {
+        display: flex;
+    }
+    
+    header,
+    footer,
+    .slide-section {
+        position: relative;
+        justify-content: space-between;
+    }
+    /* =========================================
    2.0 Legal popup    
-========================================= */
-
-.legal-popup {
-    display: none;
-    height: 98%;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 5px 13px;
-    position: relative;
-    margin-top: 5px;
-    text-align: justify;
-}
-
-.btn-close {
-    border: none;
-    background: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-}
-
-
-/* =========================================
+    ========================================= */
+    
+    .legal-popup {
+        display: none;
+        height: 98%;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 5px 13px;
+        position: relative;
+        margin-top: 5px;
+        text-align: justify;
+    }
+    
+    .btn-close {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+    /* =========================================
    3.0 Header     
 ========================================= */
-
-header {
-    height: 210px;
-}
-
-.title-wrapper,
-.slide-section {
-    margin-top: 10px;
-}
-
-.title-wrapper {
-    height: 55px;
-    width: 115px;
-    margin-left: 13px;
-    justify-content: flex-start;
-}
-
-.header-text {
-    margin-top: -5px;
-    line-height: .84;
-    width: 78px;
-}
-
-.title-gold {
-    margin-right: 5px;
-}
-
-
-/* 3.1 Chevrons -------------------------- */
-
-.chevrons {
-    overflow: auto;
-    margin-top: 2px;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* =========================================
+    
+    header {
+        height: 210px;
+    }
+    
+    .title-wrapper,
+    .slide-section {
+        margin-top: 10px;
+    }
+    
+    .title-wrapper {
+        height: 55px;
+        width: 115px;
+        margin-left: 13px;
+        justify-content: flex-start;
+    }
+    
+    .header-text {
+        margin-top: -5px;
+        line-height: .84;
+        width: 78px;
+    }
+    
+    .title-gold {
+        margin-right: 5px;
+    }
+    /* 3.1 Chevrons -------------------------- */
+    
+    .chevrons {
+        overflow: auto;
+        margin-top: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* =========================================
    3.2 Header bottom     
 ========================================= */
-
-.btn-legal {
-    background: none;
-    border: none;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-    padding: 0px 0px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-header p {
-    position: absolute;
-    margin-right: 10px;
-    bottom: 0px;
-    right: 0;
-}
-
-
-/* end of header bottom  --------------- */
-
-
-/* =========================================
-   4.0 Slide     
-========================================= */
-
-.slide-section {
-    height: 93px;
-    box-shadow: -4.388px 4.092px 3px rgba(12, 13, 12, 0.19)
-}
-
-.slide-section .container:nth-child(1) {
-    height: 93px;
-    width: 150px;
-}
-
-.slide-section .container:nth-child(1n+2) {
-    width: 140px;
-}
-
-.slide {
-    background-color: #002c5f;
-    /* width: 150px; */
-    align-items: center;
-    justify-content: center;
-}
-
-.slide-1 {
-    opacity: 1;
-    position: absolute;
-    right: -12px;
-    display: block;
-    /* padding: 0 0 0 3px; */
-    padding: 0 15px 0 15px;
-}
-
-.slide-2 {
-    opacity: 0;
-    padding: 4px 2px 0 10px;
-    /* display: block; */
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-}
-
-.slide-2 h2:after {
-    display: block;
-    content: "";
-    height: 1.5px;
-    width: 130px;
-    background-color: #fff;
-    overflow: hidden;
-    margin: 5px 0 -16px;
-}
-
-.feautures {
-    display: inline-flex;
-    margin-top: -3px;
-    padding: auto;
-}
-
-.slide-2 figure {
-    margin: 0 auto;
-    display: inline-flex;
-    height: auto;
-    width: 12px;
-    margin-right: 5px;
-}
-
-h4 {
-    margin: 0 auto;
-}
-
-.feautures .mark {
-    margin-left: 0;
-}
-
-
-/* =========================================
-   5.0 Footer     
-========================================= */
-
-footer {
-    background-color: #fff;
-}
-
-.footer-container {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: auto;
-    padding: 10px 0 8px 0;
-}
-
-footer button {
-    background-color: #002c5f;
-    border: none;
-    padding: 3px 15px 3px 10px;
-}
-
-.logo {
-    height: 14px;
-    width: 115px;
-}
-
-
-/* =========================================
-   6.0 Typography     
-========================================= */
-
-.legal-popup {
-    font-size: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1 {
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 14px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.title-small {
-    font-size: 7px;
-    color: #192c5e;
-}
-
-.title-gold {
-    font-size: 13px;
-    color: #e7983e;
-}
-
-.title-large {
-    font-size: 26px;
-    color: #192c5e;
-}
-
-.title-normal {
-    font-size: 11px;
-}
-
-h2 span {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    color: #fff;
-}
-
-.slide-2 h3 {
-    font-size: 10px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-}
-
-.slide-2 h2 {
-    font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
-    font-weight: 100;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.slide-2 h4 {
-    font-size: 8.5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    color: #fff;
-}
-
-.mark {
-    font-size: 5px;
-    vertical-align: top;
-}
-
-.btn-legal,
-header p {
-    color: #fff;
-    text-shadow: 0.5px 0.5px 0.5px grey;
-}
-
-.btn-legal {
-    font-size: 10px;
-}
-
-header P {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 8px;
-}
-
-footer button {
-    font-size: 11px;
-    color: #fff;
-}
+    
+    .btn-legal {
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 5px;
+        left: 10px;
+        padding: 0px 0px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    
+    header p {
+        position: absolute;
+        margin-right: 10px;
+        bottom: 0px;
+        right: 0;
+    }
+    /* end of header bottom  --------------- */
+    /* =========================================
+        4.0 Slide     
+    ========================================= */
+    
+    .slide-section .container {
+        height: 93px;
+        box-shadow: -4.388px 4.092px 3px rgba(12, 13, 12, 0.19)
+    }
+    
+    .slide-section .container:nth-child(1) {
+        height: 93px;
+        width: 150px;
+    }
+    
+    .slide-section .container:nth-child(1n+2) {
+        width: 140px;
+    }
+    
+    .slide {
+        background-color: #002c5f;
+        /* width: 150px; */
+        align-items: center;
+        justify-content: center;
+    }
+    /* slide 1 */
+    
+    .slide-1 {
+        opacity: 1;
+        position: absolute;
+        right: -12px;
+        display: block;
+        /* padding: 0 0 0 3px; */
+        padding: 0 15px 0 15px;
+    }
+    /* slide 2 */
+    
+    .slide-2,
+    .slide-3,
+    .slide-4 {
+        opacity: 0;
+        padding: 4px 2px 0 10px;
+        /* display: block; */
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;
+    }
+    
+    .slide-2 h2:after,
+    .slide-3 h2:after,
+    .slide-4 h2:after {
+        display: block;
+        content: "";
+        height: 1.5px;
+        width: 130px;
+        background-color: #fff;
+        overflow: hidden;
+        margin: 5px 0 -16px;
+    }
+    
+    .feautures {
+        display: inline-flex;
+        margin-top: -3px;
+        padding: auto;
+    }
+    
+    .slide-2 figure,
+    .slide-3 figure,
+    .slide-4 figure {
+        margin: 0 auto;
+        display: inline-flex;
+        height: auto;
+        width: 12px;
+        margin-right: 5px;
+    }
+    
+    h4 {
+        margin: 0 auto;
+    }
+    /* slide 3 */
+    
+    .slide-3 {
+        opacity: 1;
+    }
+    /* slide 4 */
+    
+    .slide-4 h4 {
+        margin-top: 4px;
+    }
+    /* slide 5 */
+    
+    .slide-5 {
+        display: block;
+    }
+    /* slide 5 upper text */
+    
+    .slide-5 h2 {
+        margin: 0;
+        padding: 2.5px 8px;
+        background: #fff;
+    }
+    
+    .slide-5 .box-container {
+        display: inline-flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        line-height: .95;
+        margin-top: 3px;
+    }
+    
+    .slide-5 .box-left:after {
+        content: "";
+        background-color: #fff;
+        height: 30px;
+        width: .7px;
+        position: absolute;
+        top: 20px;
+        right: 70px;
+    }
+    
+    .slide-5 .box-left,
+    .slide-5 .box-right {
+        width: 50%;
+    }
+    
+    .slide-5 .box>* {
+        position: unset;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .slide .slide-5 .box-bottom {}
+    /* =========================================
+        5.0 Footer     
+    ========================================= */
+    
+    footer {
+        background-color: #fff;
+    }
+    
+    .footer-container {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: auto;
+        padding: 10px 0 8px 0;
+    }
+    
+    footer .button {
+        background-color: #002c5f;
+        border: none;
+        padding: 3px 15px 3px 10px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .logo {
+        height: 14px;
+        width: 115px;
+    }
+    /* =========================================
+        6.0 Typography     
+    ========================================= */
+    
+    .legal-popup {
+        font-size: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    h1 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 14px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .title-small {
+        font-size: 7px;
+        color: #192c5e;
+    }
+    
+    .title-gold {
+        font-size: 13px;
+        color: #e7983e;
+    }
+    
+    .title-large {
+        font-size: 26px;
+        color: #192c5e;
+    }
+    
+    .title-normal {
+        font-size: 11px;
+    }
+    
+    h2 span {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        color: #fff;
+    }
+    
+    .slide-2 h3,
+    .slide-3 h3,
+    .slide-4 h3,
+    .slide-5 h3,
+    .slide-5 span {
+        font-size: 10px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+    }
+    
+    .slide-2 h2,
+    .slide-3 h2,
+    .slide-4 h2,
+    .slide-5 h2 {
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+        font-weight: 100;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    .slide-5 h2 {
+        color: #233661;
+        font-weight: 100;
+    }
+    
+    .slide-2 h4,
+    .slide-3 h4,
+    .slide-4 h4,
+    .slide-5 {
+        font-size: 8.5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        color: #fff;
+    }
+    
+    .slide-3 h4 {
+        font-size: 8px;
+    }
+    
+    .mark {
+        font-size: 5px;
+        vertical-align: top;
+    }
+    
+    .btn-legal,
+    header p {
+        color: #fff;
+        text-shadow: 0.5px 0.5px 0.5px grey;
+    }
+    
+    .btn-legal {
+        font-size: 10px;
+    }
+    
+    header P {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8px;
+    }
+    /* fonts of slide 5 only */
+    
+    .slide-5 p {
+        text-shadow: none;
+    }
+    
+    .slide-5 h4 {
+        font-size: 8px;
+        font-weight: 400;
+    }
+    
+    .slide-5 .span-text {
+        font-size: 8px;
+    }
+    
+    .slide-5 .span-digit {
+        font-size: 30px;
+    }
+    
+    .slide-5 .span-percent {
+        font-size: 17px;
+    }
+    
+    .slide-5 .mark {
+        font-size: 5px;
+        transform: rotate(90deg);
+    }
+    
+    footer .button {
+        font-size: 11px;
+        color: #fff;
+    }
+    /* TEMPORARY FOR SWITHING SLIDES IN PROGRESS */
+    
+    .slide-1 {
+        opacity: 0;
+    }
+    
+    .slide-2 {
+        opacity: 0;
+    }
+    
+    .slide-3 {
+        opacity: 0;
+    }
+    
+    .slide-4 {
+        opacity: 0;
+    }
+    
+    .slide-5 {
+        opacity: 1;
+    }
