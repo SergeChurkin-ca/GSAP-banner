@@ -167,7 +167,7 @@ header p {
 
 .slide-2 {
     opacity: 1;
-    padding: 6px 2px 0 10px;
+    padding: 4px 2px 0 10px;
     /* display: block; */
     display: inline-flex;
     flex-direction: column;
@@ -182,11 +182,12 @@ header p {
     width: 130px;
     background-color: #fff;
     overflow: hidden;
-    margin: 5px 0 -14px;
+    margin: 5px 0 -16px;
 }
 
 .feautures {
     display: inline-flex;
+    margin-top: -3px;
 }
 
 .slide-2 figure {
@@ -199,6 +200,10 @@ header p {
 
 h4 {
     margin: 0 auto;
+}
+
+.feautures .mark {
+    margin-left: 0;
 }
 
 
