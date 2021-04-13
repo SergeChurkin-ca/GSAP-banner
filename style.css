@@ -146,27 +146,38 @@ header p {
    4.0 Slide     
 ========================================= */
 
-.slide-section .container {
+.slide-section {
     height: 93px;
-    width: 140px;
     box-shadow: -4.388px 4.092px 3px rgba(12, 13, 12, 0.19)
+}
+
+.slide-section .container:nth-child(1) {
+    height: 93px;
+    width: 150px;
+}
+
+.slide-section .container:nth-child(1n+2) {
+    width: 140px;
 }
 
 .slide {
     background-color: #002c5f;
-    width: 150px;
+    /* width: 150px; */
     align-items: center;
     justify-content: center;
 }
 
 .slide-1 {
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     right: -12px;
+    display: block;
+    /* padding: 0 0 0 3px; */
+    padding: 0 15px 0 15px;
 }
 
 .slide-2 {
-    opacity: 1;
+    opacity: 0;
     padding: 4px 2px 0 10px;
     /* display: block; */
     display: inline-flex;
@@ -188,6 +199,7 @@ header p {
 .feautures {
     display: inline-flex;
     margin-top: -3px;
+    padding: auto;
 }
 
 .slide-2 figure {
