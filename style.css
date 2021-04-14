@@ -3,7 +3,7 @@
 /*
 *   TABLE OF CONTENTS
 *
-*   1.0 Initial layouts 
+*   1.0 General layouts 
 *   2.0 Legal popup     
 *   3.0 Header
 *       3.1 Header bottom
@@ -14,7 +14,7 @@
 
 
 /* =========================================
-    1.0 Initial layouts     
+    1.0 General layouts     
 ========================================= */
 
 .banner {
@@ -199,7 +199,6 @@ header p {
 }
 
 .slide-1 {
-    /* opacity: 1; */
     position: absolute;
     right: -12px;
     display: block;
@@ -366,12 +365,19 @@ a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+h1,
+h2 span,
+h3,
+.slide-5 span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
 h1 {
     text-transform: uppercase;
     margin: 0;
     font-size: 14px;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .title-small {
@@ -395,19 +401,14 @@ h1 {
 
 h2 span {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #fff;
 }
 
 .slide-2 h3,
 .slide-3 h3,
 .slide-4 h3,
-.slide-5 h3,
 .slide-5 span {
     font-size: 10px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
 }
 
@@ -446,23 +447,21 @@ h2 span {
     vertical-align: top;
 }
 
-.btn-legal,
-header p {
-    color: #fff;
-    text-shadow: 0.5px 0.5px 0.5px grey;
-}
-
 .btn-legal {
     font-size: 10px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 0.5px grey;
 }
 
 header P {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 8px;
+    color: #fff;
 }
 
 
-/* fonts of slide 5 only */
+/* fonts of slide 5 */
 
 .slide-5 p {
     text-shadow: none;
@@ -502,6 +501,3 @@ footer .button:focus {
     border: inset 1px #192c5e;
     margin: -1px;
 }
-
-
-/* TEMPORARY FOR SWITHING SLIDES IN PROGRESS */
