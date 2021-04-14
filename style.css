@@ -24,7 +24,11 @@
     .banner-wrapper {
         width: 275px;
         margin: 0 auto;
-        background: no-repeat center center url('assets/background.png');
+        background-size: cover;
+    }
+    
+    header {
+        background: no-repeat center url('assets/background.jpg');
         background-size: cover;
     }
     
